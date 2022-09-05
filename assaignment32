@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+	int n,m;
+	printf("enter n,m values");
+	scanf("%d%d",&n,&m);
+	range(n,m);
+}
+void range(int start,int end)
+{
+	if(start>end)
+	return;
+	else
+		printf("%d  ",start);
+		range(start+1,end);
+}
